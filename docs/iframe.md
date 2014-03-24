@@ -13,7 +13,7 @@ FigChat can be integrated with other web applications through an `iframe` system
 </iframe>
 ```
 
-See a working example!
+[See a working example!](http://htmlpreview.github.io/?https://github.com/FastFig/FigChat-API/blob/master/examples/basic.html)
 
 src Attribute
 ---------------
