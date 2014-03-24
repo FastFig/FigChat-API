@@ -7,3 +7,6 @@ The FigChat API is used to integrate your application with FigChat.  It has two 
 
 Support for the API is available at [support@fastfig.com](mailto:support@fastfig.com).
 
+Usage Examples
+--------------
+- [Basic Usage]() [src](/examples/basic.html)
