@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic FigChat Embed Example</title>
+
+        <style type='text/css'>
+            body {
+                font-family: Avenir, "Helvetica Neue", Helvetica, sans-serif;
+            }
+            
+            #figchat {
+                width: 500px;
+                height: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id='figchat-button'>Click Me and FigChat will Open in a New Window</button>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <script type='text/javascript'>
+            $(function() {
+                $("#figchat-button").click(function() {
+                    window.open(
+                        "https://www.fastfig.com/chat/hVUPLcIiBRyovQRzWwQzsiRWaWvRPKsX/?e=1",
+                        "",
+                        "width=500, height=500"
+                    );
+                });
+            });
+        </script>
+    </body>
+</html>

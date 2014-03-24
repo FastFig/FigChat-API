@@ -9,4 +9,5 @@ Support for the API is available at [support@fastfig.com](mailto:support@fastfig
 
 Usage Examples
 --------------
-- [Basic Usage](http://htmlpreview.github.io/?https://github.com/FastFig/FigChat-API/blob/master/examples/basic.html) [source](/examples/basic.html)
+- [Basic Usage](http://htmlpreview.github.io/?https://github.com/FastFig/FigChat-API/blob/master/examples/basic.html) - [source](/examples/basic.html)
+- [Popup in new window](http://htmlpreview.github.io/?https://github.com/FastFig/FigChat-API/blob/master/examples/popup.html) - [source](/examples/popup.html)
