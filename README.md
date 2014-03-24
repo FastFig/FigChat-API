@@ -11,3 +11,4 @@ Usage Examples
 --------------
 - [Basic Usage](http://htmlpreview.github.io/?https://github.com/FastFig/FigChat-API/blob/master/examples/basic.html) - [source](/examples/basic.html)
 - [Popup in new window](http://htmlpreview.github.io/?https://github.com/FastFig/FigChat-API/blob/master/examples/popup.html) - [source](/examples/popup.html)
+- [Load via JavaScript](http://htmlpreview.github.io/?https://github.com/FastFig/FigChat-API/blob/master/examples/javascript.html) - [source](/examples/javascript.html) - This is commonly used if you wish to use FigChat as an alternative to an existing chat client.

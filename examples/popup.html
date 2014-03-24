@@ -7,11 +7,6 @@
             body {
                 font-family: Avenir, "Helvetica Neue", Helvetica, sans-serif;
             }
-            
-            #figchat {
-                width: 500px;
-                height: 500px;
-            }
         </style>
     </head>
     <body>
@@ -20,10 +15,12 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
         <script type='text/javascript'>
+            var chatName = "hVUPLcIiBRyovQRzWwQzsiRWaWvRPKsX"; //Possibly obtained via REST API
+
             $(function() {
                 $("#figchat-button").click(function() {
                     window.open(
-                        "https://www.fastfig.com/chat/hVUPLcIiBRyovQRzWwQzsiRWaWvRPKsX/?e=1",
+                        "https://www.fastfig.com/chat/"+chatName+"/?e=1",
                         "",
                         "width=500, height=500"
                     );

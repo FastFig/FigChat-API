@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic FigChat Embed Example</title>
+
+        <style type='text/css'>
+            body {
+                font-family: Avenir, "Helvetica Neue", Helvetica, sans-serif;
+            }
+
+            .tabs {
+                width: 500px;
+            }
+
+            .tab-list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .tab {
+                display: inline-block;
+                line-height: 30px;
+                background: #3576FF;
+                color: white;
+                padding: 0 6px;
+                cursor: pointer;
+            }
+
+            .tab.active-tab {
+                background: #444;
+            }
+
+            .tab-content {
+                height: 500px;
+                border: 1px solid #CCC;
+            }
+
+            .tab-content:not(.active-tab) {
+                display: none;
+            }
+
+            .figchat {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Click FigChat and FigChat will be Lazy-Loaded</h1>
+
+        <div class='tabs'>
+            <ul class='tab-list'>
+                <li class='tab active-tab' data-name='LameChat'>LameChat</li>
+                <li class='tab' data-name='FigChat'>FigChat</li>
+            </ul>
+
+            <div class='tab-content active-tab' data-name='LameChat'>Some Other Chat Client</div>
+            <div class='tab-content' data-name='FigChat'></div>
+        </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <script type='text/javascript'>
+            var chatName = "hVUPLcIiBRyovQRzWwQzsiRWaWvRPKsX", //Possibly obtained via REST API
+                figChatHasLoaded = false;
+
+            $(function() {
+                $(document).on('click', '.tab:not(.active-tab)', function() {
+                    //Switch the tabs
+                    var newTabName = $(this).attr('data-name');
+
+                    $('.active-tab').removeClass('active-tab');
+                    $('[data-name="'+newTabName+'"]').addClass('active-tab');
+
+                    //Load FigChat if it hasn't already been loaded
+                    if(!figChatHasLoaded) {
+                        $("<iframe class='figchat' src='https://www.fastfig.com/chat/hVUPLcIiBRyovQRzWwQzsiRWaWvRPKsX/?e=1' frameborder='0'></iframe> allowfullscreen mozallowfullscreen webkitallowfullscreen")
+                            .appendTo(".tab-content[data-name=FigChat]");
+
+                        figChatHasLoaded = true;
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
