@@ -35,4 +35,14 @@ Other Parts of the iframe Embed
 - `frameborder="0"` prevents the iframe from having an ugly default border surrounding it.
 - `allowfullscreen mozallowfullscreen webkitallowfullscreen` allows rich media such as videos sent within FigChat to go full-screen when a user opts to.  Remove these if you wish for videos within FigChat to not have the capability to go full-screen.
 
-Styleing
+
+Styling your Embed
+------------------
+
+Currently, CSS styling of the FigChat embed is limited to modifications to the `iframe` itself.  Some common things to change are:
+- `height` and `width`
+- positioning
+- `display`
+- `border`
+
+Custom styling for FigChat will be available in the next release.
