@@ -12,6 +12,7 @@ Chat rooms created using this API are not meant for distribution.
 Usage
 -----
 FigChat does not have any library requirements and is entirely self contained.
+Chat creation, access, and embedding are all incredibly easy in our system.
 
 to create a chatroom make a `GET` or `POST` request to https://www.fastfig.com/api/chat/new-room.php
 As of now there are no required feilds for this request and you may leave it blank.
@@ -53,9 +54,6 @@ Advice
 Some things to design for:
 * All FigChat API's will require a licence key for official use. Because of this calls to these APIs should be made from a backend server rather than from frontend javascript to ensure the security of a license key.
 * FastFig will not keep track of specific chats. FastFig will maintain all chatrooms until they are deleted, but is not responsible for lost room names. Therefore it is your responsibility to keep track of the names of any chatrooms you create.
-
-
-
 
 
 
