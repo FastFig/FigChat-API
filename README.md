@@ -29,7 +29,10 @@ If nothing went wrong on our end `error` will be false, and `name` will contain 
 
 (Note: You are responsible for keeping track of the chatroom's name.)
 
-To access this new chatroom directly through FastFig you can go to https://www.fastfig.com/chat/`name`
+To access this new chatroom directly through FastFig you can go to:
+```html
+    https://www.fastfig.com/chat/[ chat room name]
+```
 Or you can embed it using an `<iframe>`.
 
 ####Sample `<iframe>`:
@@ -43,9 +46,12 @@ Or you can embed it using an `<iframe>`.
 </iframe>
 ```
 
+Adding an `<iframe>` like this with your desired chatroom is all that is needed to embed a FigChat on your website.
+
 The embed has some basic construction you may choose to follow.
-* Query string: including the variable `e=1` at the end of the source URL will ensure the chatroom is styled for embedding.
-* Frameborder="0": some basic css to ensure the iframe doesn't have a border around it.
+* `src="https://www.fastfig.com/chat/[   chat room name   ]/?e=1"`
+* Query string: including the variable `e=1` at the end of the source URL will ensure the chatroom is styled for embedding. Leaving this out will result in improper styling and function of the embedded chat.
+* Frameborder="0": Some basic css to ensure the iframe doesn't have a border around it.
 * Fullscreen flags: FigChat allows for rich media such as youtube videos. To make sure they have permission to go fullscreen from within an iframe you can include the `allowfullscreen`, `mozallowfullscreen`, and `webkitallowfullscreen` flags in the iframe code.
 
 Advice
