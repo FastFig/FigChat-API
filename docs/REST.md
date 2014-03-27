@@ -1,7 +1,10 @@
 FigChat REST API
 ================
 
-The FigChat REST API is used to create chat rooms, get chat room content, send messages to chat windows. All of the endpoints return JSON.
+The FigChat REST API is used to create chat rooms, get chat room content, send messages to chat windows. 
+All of the endpoints return `JSON` strings. 
+All returned `JSON` will include a variable called `error`. If there were no errors with your request `error` will be `false`. If `error` is `true` then `error_msg` will contain an explination of what went wrong.
+
 
 
 New Room
@@ -9,6 +12,7 @@ New Room
 
 https://www.fastfig.com/api/chat/new-room.php
 `GET` or `POST`
+As of now there are no required feilds for this request but official use will require a license key.
 
 The new-room endpoint is used to create chat rooms. 
 
