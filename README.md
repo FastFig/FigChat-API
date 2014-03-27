@@ -47,6 +47,17 @@ The embed has some basic construction you may choose to follow.
 * Frameborder="0": some basic css to ensure the iframe doesn't have a border around it.
 * Fullscreen flags: FigChat allows for rich media such as youtube videos. To make sure they have permission to go fullscreen from within an iframe you can include the `allowfullscreen`, `mozallowfullscreen`, and `webkitallowfullscreen` flags in the iframe code.
 
+Advice
+------
+
+Some things to design for:
+* All FigChat API's will require a licence key for official use. Because of this calls to these APIs should be made from a backend server rather than from frontend javascript to ensure the security of a license key.
+* FastFig will not keep track of specific chats. FastFig will maintain all chatrooms until they are deleted, but is not responsible for lost room names. Therefore it is your responsibility to keep track of the names of any chatrooms you create.
+
+
+
+
+
 
 Examples
 --------------
