@@ -15,7 +15,7 @@ FigChat does not have any library requirements and is entirely self contained.
 Chat creation, access, and embedding are all incredibly easy in our system.
 
 to create a chatroom make a `GET` or `POST` request to https://www.fastfig.com/api/chat/new-room.php
-As of now there are no required feilds for this request and you may leave it blank.
+As of now there are no required fields for this request and you may leave it blank.
 the api will return a json string containing the variables `name` and `error`.
 If nothing went wrong on our end `error` will be false, and `name` will contain the string for your new chatroom.
 
